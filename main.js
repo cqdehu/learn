@@ -41,21 +41,77 @@ function createDay(day) {
 
 createDay("Hétfő")
 
-function createClass(order) {
-    var hetfoClass1 = document.createElement('div')
-    hetfoClass1.className = "row justify-content-center "
+function createClass() {
+    // Create parent div element
+    const parentDiv = document.createElement("div");
+    parentDiv.classList.add("row", "justify-content-center");
 
-    var hetfoClass1Order = document.createElement('div')
-    hetfoClass1Order.className = "col-1 bg-light m-2 p-0 rounded col-vertical-middle "
+    // Create child div element
+    const childDiv = document.createElement("div");
+    childDiv.classList.add("col", "bg-light", "m-2", "p-0", "rounded");
+    childDiv.setAttribute("id", "");
 
-    var hetfoClass1OrderP = document.createElement('p')
-    hetfoClass1OrderP.className = "text-center TW m-0 py-3 px-2 "
-    hetfoClass1OrderP.innerHTML = order
+    // Create inner row div element
+    const innerRowDiv = document.createElement("div");
+    innerRowDiv.classList.add("row");
 
-    m3.append(hetfoClass1)
-    hetfoClass1.appendChild(hetfoClass1Order)
-    hetfoClass1Order.appendChild(hetfoClass1OrderP)
+    // Create first column of inner row div element
+    const firstColumnDiv = document.createElement("div");
+    firstColumnDiv.classList.add("col");
+
+    // Create paragraph element for first column
+    const firstColumnParagraph = document.createElement("p");
+    firstColumnParagraph.classList.add("text-start", "TW", "m-0", "py-3", "px-2");
+    firstColumnParagraph.textContent = "Történelem";
+
+    // Append paragraph element to first column div
+    firstColumnDiv.appendChild(firstColumnParagraph);
+
+    // Create second column of inner row div element
+    const secondColumnDiv = document.createElement("div");
+    secondColumnDiv.classList.add("col-3", "col-vertical-middle");
+
+    // Create paragraph element for second column
+    const secondColumnParagraph = document.createElement("p");
+    secondColumnParagraph.classList.add("text-end", "TW", "m-0", "py-3", "px-2");
+    secondColumnParagraph.textContent = "308 ";
+
+    // Create image element for level icon
+    const levelIcon = document.createElement("img");
+    levelIcon.classList.add("m-0", "p-0", "align-middle", "icon-link");
+    levelIcon.setAttribute("src", "svg/level.svg");
+    levelIcon.setAttribute("title", "level");
+
+    // Append level icon to second column paragraph
+    secondColumnParagraph.appendChild(levelIcon);
+
+    // Append first and second columns to inner row div
+    innerRowDiv.appendChild(firstColumnDiv);
+    innerRowDiv.appendChild(secondColumnDiv);
+
+    // Append inner row div to child div
+    childDiv.appendChild(innerRowDiv);
+
+    // Create another child div element
+    const childDiv2 = document.createElement("div");
+    childDiv2.classList.add("col-1", "bg-light", "m-2", "p-0", "rounded", "col-vertical-middle");
+
+    // Create paragraph element for second child div
+    const childDiv2Paragraph = document.createElement("p");
+    childDiv2Paragraph.classList.add("text-center", "TW", "m-0", "py-3", "px-2");
+    childDiv2Paragraph.textContent = "1";
+
+    // Append paragraph element to second child div
+    childDiv2.appendChild(childDiv2Paragraph);
+
+    // Append child divs to parent div
+    parentDiv.appendChild(childDiv2);
+    parentDiv.appendChild(childDiv);
+
+    m3.append(parentDiv)
 }
+
+
 
 createClass(1)
 
