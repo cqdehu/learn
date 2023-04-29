@@ -85,6 +85,9 @@ function createClass(sorszam, tantargy, terem) {
     // Append level icon to second column paragraph
     secondColumnParagraph.appendChild(levelIcon);
 
+    // Append second column paragraph to second column div
+    secondColumnDiv.appendChild(secondColumnParagraph);
+
     // Append first and second columns to inner row div
     innerRowDiv.appendChild(firstColumnDiv);
     innerRowDiv.appendChild(secondColumnDiv);
@@ -111,7 +114,7 @@ function createClass(sorszam, tantargy, terem) {
     m3.append(parentDiv)
 }
 
-createClass("1","Tesi","4")
+createClass("1", "Tesi", "4")
 
 //function createOneDay(day,sorszam, tantargy, terem) {
 //    createDay(day)
