@@ -25,6 +25,16 @@ function createDay(day) {
     hetfoCol.appendChild(hetfoP)
 }
 
+let days = ["Hétfő","Kedd","Szerda","Csütörtök","Péntek"] 
+
+for (let i = 0; i < days.length; i++) {
+    createOneDay(days[i])
+}
+
+function createOneDay(day) {
+    createDay(day)
+}
+
 
 
 function createClass(sorszam, tantargy, terem, nap) {
@@ -122,15 +132,9 @@ $(document).ready(function () {
     })
 })
 
-let days = ["Hétfő","Kedd","Szerda","Csütörtök","Péntek"] 
 
-for (let i = 0; i < days.length; i++) {
-    createOneDay(days[i])
-}
 
-function createOneDay(day) {
-    createDay(day)
-}
+
 
 
 
