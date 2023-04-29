@@ -161,6 +161,12 @@ $('#Hétfős').on('click',function(){
     $('.Péntek').hide()
 })
 
+$('#Hétfős').on('dblclick',function(){
+    $('.Kedd').show()
+    $('.Szerda').show()
+    $('.Csütörtök').show()
+    $('.Péntek').show()
+})
 
 
 
