@@ -27,14 +27,14 @@ function createDay(day) {
 
 let days = ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek"]
 
-                    for (let i = 0; i < days.length; i++) {
-                        createOneDay(days[i])
-                    }
-                
-                    function createOneDay(day) {
-                        createDay(day)
-                        
-                    }
+for (let i = 0; i < days.length; i++) {
+    createOneDay(days[i])
+}
+
+function createOneDay(day) {
+    createDay(day)
+
+}
 
 
 
@@ -111,7 +111,7 @@ function createClass(sorszam, tantargy, terem, nap) {
     if (parentDiv.className.includes('Hétfő')) {
         $(parentDiv).insertAfter("#Hétfős");
     }
-    
+
     if (parentDiv.className.includes('Kedd')) {
         $(parentDiv).insertAfter("#Kedds");
     }
@@ -139,7 +139,7 @@ $(document).ready(function () {
         dataType: "json",
         success: function (data) {
             if (data.length > 0) {
-                
+
                 for (var i = 0; i < data.length; i++) {
                     var tantargy = data[i].tantargy
                     var terem = data[i].terem
@@ -147,7 +147,7 @@ $(document).ready(function () {
                     var nap = data[i].nap
                     createClass(sorszam, tantargy, terem, nap)
 
-    
+
                 }
             }
         }
@@ -160,22 +160,26 @@ var clicked = {
     'Szerdas': false,
     'Csütörtöks': false,
     'Pénteks': false
-  };
-  
-  $('#Hétfős').on('dblclick', function() {
+};
+
+$('#Hétfős').on('dblclick', function () {
     $('.Kedd, .Szerda, .Csütörtök, .Péntek, #Kedds, #Szerdas, #Csütörtöks, #Pénteks').fadeOut(500);
-  });
+});
 
-  $('#Hétfős').on('click', function() {
+$('#Hétfős').on('click', function () {
     $('.Kedd, .Szerda, .Csütörtök, .Péntek, #Kedds, #Szerdas, #Csütörtöks, #Pénteks').fadeIn(500);
-  });
+});
 
 
-  
-  $('#Kedds').on('dblclick', function() {
+
+$('#Kedds').on('dblclick', function () {
     $('.Hétfő, .Szerda, .Csütörtök, .Péntek, #Hétfős, #Szerdas, #Csütörtöks, #Pénteks').fadeOut(500);
-      $('.Kedd, .Szerda, .Csütörtök, .Péntek, #Kedds, #Szerdas, #Csütörtöks, #Pénteks').hide();
-  });
+});
+
+$('##Kedds').on('click', function () {
+    $('.Hétfő, .Szerda, .Csütörtök, .Péntek, #Hétfős, #Szerdas, #Csütörtöks, #Pénteks').fadeIn(500);
+});
+
 
 
 
