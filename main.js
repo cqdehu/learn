@@ -112,9 +112,7 @@ $(document).ready(function () {
     $.ajax({
         type: "POST",
         url: "getclass.php",
-        data: {
-            name: "Abel"
-        },
+        dataType: "json",
         success: function (data) {
             if (data.length > 0) {
                 for (var i = 0; i < data.length; i++) {
