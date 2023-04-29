@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    document.body.fadeIn(500)
-})
+    $('body').fadeIn(500);
+  });
 
 var m3 = $('#m3')
 
