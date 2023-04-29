@@ -129,9 +129,6 @@ function createClass(sorszam, tantargy, terem, nap) {
         $(parentDiv).insertAfter("#Pénteks");
     }
 
-    
-  
-    
 
 }
 
@@ -158,7 +155,9 @@ $(document).ready(function () {
     })
 })
 
-
+$('#Hétfős').on('click',function(){
+    $('#offcanvasClass').offcanvas('show')
+})
 
 
 
