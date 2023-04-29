@@ -1,0 +1,16 @@
+body {
+    background: #1c1c1c;
+    text-align: justify;
+}
+
+ion-icon {
+    font-size: 1.3rem;
+}
+
+.col-vertical-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
