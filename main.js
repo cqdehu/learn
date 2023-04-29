@@ -7,9 +7,9 @@ $(document).ready(function () {
         },
         success: function (response) {
             if (response == "success") {
-                alert(":D")
+                console.log(":D")
             } else {
-                alert(response)
+                console.log(response)
             }
         }
     })
@@ -34,6 +34,9 @@ dayP1.className = "text-center TW m-0 py-3 px-2 "
 dayP1.innerHTML = "Hétfő"
 
 
+//col-1 bg-light m-2 p-0 rounded col-vertical-middle
+
+var order = document.createElement('')
 
 hetfo.append(m3)
 m3.append(Row1)
@@ -41,6 +44,7 @@ Row1.appendChild(dayCol1)
 dayCol1.appendChild(dayP1)
 
 m3.append(Row1)
+
 
 
 
