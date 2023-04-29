@@ -11,6 +11,7 @@ var m3 = $('#m3')
 function createDay(day) {
     var hetfoRow = document.createElement('div')
     hetfoRow.className = "row justify-content-center "
+    hetfoRow.id = day
 
     var hetfoCol = document.createElement('div')
     hetfoCol.className = "col bg-light m-2 p-0 rounded "
