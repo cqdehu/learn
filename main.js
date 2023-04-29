@@ -23,19 +23,26 @@ var m3 = $('#m3')
 //var m3 = document.createElement('div')
 //m3.className = "m-3 "
 
-var hetfoRow = document.createElement('div')
-hetfoRow.className = "row justify-content-center "
+function createDay(day) {
+    var hetfoRow = document.createElement('div')
+    hetfoRow.className = "row justify-content-center "
 
-var hetfoCol = document.createElement('div')
-hetfoCol.className = "col bg-light m-2 p-0 rounded "
+    var hetfoCol = document.createElement('div')
+    hetfoCol.className = "col bg-light m-2 p-0 rounded "
 
-var hetfoP = document.createElement('p')
-hetfoP.className = "text-center TW m-0 py-3 px-2 "
-hetfoP.innerHTML = "Hétfő / Created"
+    var hetfoP = document.createElement('p')
+    hetfoP.className = "text-center TW m-0 py-3 px-2 "
+    hetfoP.innerHTML = day
 
-m3.append(hetfoRow)
-hetfoRow.appendChild(hetfoCol)
-hetfoCol.appendChild(hetfoP)
+    m3.append(hetfoRow)
+    hetfoRow.appendChild(hetfoCol)
+    hetfoCol.appendChild(hetfoP)
+}
+
+createDay("Hétfő")
+
+createDay("Kedd")
+
 
 
 var hetfoClass1 = document.createElement('div')
