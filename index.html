@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
@@ -289,38 +287,7 @@
 
     </main>
 
-    <script>
-        $('#_blank_').hide()
-        var hetfo = $('#hetfo')
-        var kedd = $('#kedd')
-        var szerda = $('#szerda')
-        var csutortok = $('#csutortok')
-        var pentek = $('#pentek')
-        var szombat = $('#szombat')
-        var vasarnap = $('#vasarnap')
-
-        $(document).ready(function () {
-
-            hetfo.hide()
-            hetfo.fadeIn(500)
-            kedd.hide()
-            kedd.fadeIn(1000)
-            szerda.hide()
-            szerda.fadeIn(1500)
-            csutortok.hide()
-            csutortok.fadeIn(2000)
-            pentek.hide()
-            pentek.fadeIn(2500)
-            szombat.hide()
-            szombat.fadeIn(3000)
-            vasarnap.hide()
-            vasarnap.fadeIn(3500)
-        })
-
-        hetfo.on('click', function () {
-            kedd.fadeIn()
-        })
-    </script>
+    <script src="main.js"></script>
 
 </body>
 
