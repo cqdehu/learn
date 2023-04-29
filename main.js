@@ -155,7 +155,7 @@ $(document).ready(function () {
 })
 
 $('#Hétfős').on('dblclick',function(){
-    document.getElementById('Hétfős').scrollIntoView({ behavior: 'smooth' })
+    window.location.href = "#Hétfős"
     $('.Kedd').toggle()
     $('.Szerda').toggle()
     $('.Csütörtök').toggle()
@@ -167,7 +167,7 @@ $('#Hétfős').on('dblclick',function(){
 })
 
 $('#Kedds').on('dblclick',function(){
-    document.getElementById('Kedds').scrollIntoView({ behavior: 'smooth' })
+    window.location.href = "#Kedds"
     $('.Hétfő').toggle()
     $('.Szerda').toggle()
     $('.Csütörtök').toggle()
