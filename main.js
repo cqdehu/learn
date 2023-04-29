@@ -41,7 +41,7 @@ function createDay(day) {
 
 createDay("Hétfő")
 
-function createClass() {
+function createClass(sorszam, tantargy, terem) {
     // Create parent div element
     const parentDiv = document.createElement("div");
     parentDiv.classList.add("row", "justify-content-center");
@@ -62,7 +62,7 @@ function createClass() {
     // Create paragraph element for first column
     const firstColumnParagraph = document.createElement("p");
     firstColumnParagraph.classList.add("text-start", "TW", "m-0", "py-3", "px-2");
-    firstColumnParagraph.textContent = "Történelem";
+    firstColumnParagraph.textContent = tantargy;
 
     // Append paragraph element to first column div
     firstColumnDiv.appendChild(firstColumnParagraph);
@@ -74,7 +74,7 @@ function createClass() {
     // Create paragraph element for second column
     const secondColumnParagraph = document.createElement("p");
     secondColumnParagraph.classList.add("text-end", "TW", "m-0", "py-3", "px-2");
-    secondColumnParagraph.textContent = "308 ";
+    secondColumnParagraph.textContent = terem;
 
     // Create image element for level icon
     const levelIcon = document.createElement("img");
@@ -99,7 +99,7 @@ function createClass() {
     // Create paragraph element for second child div
     const childDiv2Paragraph = document.createElement("p");
     childDiv2Paragraph.classList.add("text-center", "TW", "m-0", "py-3", "px-2");
-    childDiv2Paragraph.textContent = "1";
+    childDiv2Paragraph.textContent = sorszam;
 
     // Append paragraph element to second child div
     childDiv2.appendChild(childDiv2Paragraph);
@@ -113,9 +113,9 @@ function createClass() {
 
 
 
-createClass(1)
+createClass(1,"Történelem",133)
 
-createClass(2)
+createClass(2,"Fizika",308)
 
 
 
