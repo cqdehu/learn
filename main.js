@@ -101,7 +101,7 @@ function createClass(sorszam, tantargy, terem, nap) {
     parentDiv.appendChild(childDiv);
 
     if (parentDiv.id == "Hétfő") {
-        $("Hétfős").append(parentDiv)
+        $("#Hétfős").append(parentDiv)
     }
     
 
