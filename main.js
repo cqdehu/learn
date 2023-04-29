@@ -26,10 +26,11 @@ function createDay(day) {
 
 
 
-function createClass(sorszam, tantargy, terem) {
+function createClass(sorszam, tantargy, terem, nap) {
     // Create parent div element
     const parentDiv = document.createElement("div");
     parentDiv.classList.add("row", "justify-content-center");
+    childDiv.setAttribute("id", nap);
 
     // Create child div element
     const childDiv = document.createElement("div");
@@ -120,7 +121,7 @@ $(document).ready(function () {
                     var terem = data[i].terem
                     var sorszam = data[i].sorszam
                     var nap = data[i].nap
-                    createClass(sorszam, tantargy, terem)
+                    createClass(sorszam, tantargy, terem, nap)
                     
                 }
             }
