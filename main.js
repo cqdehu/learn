@@ -154,16 +154,10 @@ $(document).ready(function () {
     })
 })
 
-var clicked = {
-    'Hétfős': false,
-    'Kedds': false,
-    'Szerdas': false,
-    'Csütörtöks': false,
-    'Pénteks': false
-};
 
 $('#Hétfős').on('dblclick', function () {
     $('.Kedd, .Szerda, .Csütörtök, .Péntek, #Kedds, #Szerdas, #Csütörtöks, #Pénteks').fadeOut(500);
+    $('.Hétfő, #Hétfős').fadeIn(500)
 });
 
 $('#Hétfős').on('click', function () {
