@@ -114,14 +114,13 @@ function createClass(sorszam, tantargy, terem) {
     m3.append(parentDiv)
 }
 
-createClass("1", "Tesi", "4")
 
-//function createOneDay(day,sorszam, tantargy, terem) {
-//    createDay(day)
-//    createClass(sorszam, tantargy, terem)
-//}
-//
-//createOneDay("Kedd",1,"Angol nyelv","107")
+function createOneDay(day,sorszam, tantargy, terem) {
+    createDay(day)
+    createClass(sorszam, tantargy, terem)
+}
+
+createOneDay("Kedd",1,"Angol nyelv","107")
 
 
 
