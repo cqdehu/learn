@@ -154,27 +154,18 @@ $(document).ready(function () {
     })
 })
 
-$('#Hétfős').on('dblclick', function() {
-    $('.Kedd').fadeOut()
-    $('.Szerda').fadeOut()
-    $('.Csütörtök').fadeOut()
-    $('.Péntek').fadeOut()
-    $('#Hétfős').delay(500).fadeIn(500)
-  })
+$('#Hétfős').on('click', function() {
+    $('.Kedd, .Szerda, .Csütörtök, .Péntek, #Kedds, #Szerdas, #Csütörtöks, #Pénteks').fadeOut(500, function() {
+      $('#Hétfős').delay(500).fadeIn(500);
+    });
+  });
   
-
-$('#Kedds').on('dblclick',function(){
-    window.location.href = "#Kedds"
-    $('.Hétfő').toggle()
-    $('.Szerda').toggle()
-    $('.Csütörtök').toggle()
-    $('.Péntek').toggle()
-    $('#Hétfős').toggle()
-    $('#Szerdas').toggle()
-    $('#Csütörtöks').toggle()
-    $('#Pénteks').toggle()
-})
-
+  $('#Hétfős').on('dblclick', function() {
+    $('#Hétfős').fadeOut(500, function() {
+      $('.Kedd, .Szerda, .Csütörtök, .Péntek, #Kedds, #Szerdas, #Csütörtöks, #Pénteks').delay(500).fadeIn(500);
+    });
+  });
+  
 
 
 
