@@ -159,13 +159,21 @@ $('#Hétfős').on('click',function(){
     $('.Szerda').hide()
     $('.Csütörtök').hide()
     $('.Péntek').hide()
+    $('#Kedds').hide()
+    $('#Szerdas').hide()
+    $('#Csütörtöks').hide()
+    $('#Pénteks').hide()
 })
 
-$('#Hétfős').on('dblclick',function(){
-    $('.Kedd').show()
-    $('.Szerda').show()
-    $('.Csütörtök').show()
-    $('.Péntek').show()
+$('#Kedds').on('click',function(){
+    $('.Hétfő').hide()
+    $('.Szerda').hide()
+    $('.Csütörtök').hide()
+    $('.Péntek').hide()
+    $('#Hétfős').hide()
+    $('#Szerdas').hide()
+    $('#Csütörtöks').hide()
+    $('#Pénteks').hide()
 })
 
 
