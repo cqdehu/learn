@@ -114,13 +114,7 @@ $(document).ready(function () {
         dataType: "json",
         success: function (data) {
             if (data.length > 0) {
-                for (var i = 0; i < data.length; i++) {
-                    var tantargy = data[i].tantargy
-                    var terem = data[i].terem
-                    var sorszam = data[i].sorszam
-                    var nap = data[i].nap
-                    
-                    let days = ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek"]
+                let days = ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek"]
 
                     for (let i = 0; i < days.length; i++) {
                         createOneDay(days[i])
@@ -128,8 +122,15 @@ $(document).ready(function () {
                 
                     function createOneDay(day) {
                         createDay(day)
-                        createClass(sorszam, tantargy, terem, nap)
+                        
                     }
+                for (var i = 0; i < data.length; i++) {
+                    var tantargy = data[i].tantargy
+                    var terem = data[i].terem
+                    var sorszam = data[i].sorszam
+                    var nap = data[i].nap
+                    createClass(sorszam, tantargy, terem, nap)
+                    
                 }
             }
         }
