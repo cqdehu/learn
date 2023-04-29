@@ -165,6 +165,17 @@ $('#Hétfős').on('dblclick',function(){
     $('#Pénteks').toggle()
 })
 
+$('#Kedds').on('dblclick',function(){
+    $('.Hétfő').toggle()
+    $('.Szerda').toggle()
+    $('.Csütörtök').toggle()
+    $('.Péntek').toggle()
+    $('#Hétfős').toggle()
+    $('#Szerdas').toggle()
+    $('#Csütörtöks').toggle()
+    $('#Pénteks').toggle()
+})
+
 
 
 
