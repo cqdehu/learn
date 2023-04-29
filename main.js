@@ -16,6 +16,7 @@ $(document).ready(function () {
 })
 
 
+var hetfo = $('hetfo')
 
 var m3 = document.createElement('div')
 m3.className = "m-3 "
@@ -31,7 +32,7 @@ dayP1.className = "text-center TW m-0 py-3 px-2 "
 dayP1.innerHTML = "Hétfő"
 
 
-$('hetfo').appendChild(m3)
+hetfo.appendChild(m3)
 m3.appendChild(dayRow1)
 dayRow1.appendChild(dayCol1)
 dayCol1.appendChild(dayP1)
