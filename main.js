@@ -159,10 +159,6 @@ $('#Hétfős').on('dblclick', function() {
     $('.Szerda').fadeOut()
     $('.Csütörtök').fadeOut()
     $('.Péntek').fadeOut()
-    $('#Kedds').fadeOut()
-    $('#Szerdas').fadeOut()
-    $('#Csütörtöks').fadeOut()
-    $('#Pénteks').fadeOut()
     $('#Hétfős').delay(500).fadeIn(500)
   })
   
