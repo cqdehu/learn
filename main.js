@@ -154,7 +154,7 @@ $(document).ready(function () {
     })
 })
 
-$('#Hétfős').on('click',function(){
+$('#Hétfős').on('dblclick',function(){
     $('.Kedd').hide()
     $('.Szerda').hide()
     $('.Csütörtök').hide()
@@ -165,7 +165,7 @@ $('#Hétfős').on('click',function(){
     $('#Pénteks').hide()
 })
 
-$('#Hétfő').on('dblclick',function(){
+$('#Hétfő').on('click',function(){
     $('.Kedd').show()
     $('.Szerda').show()
     $('.Csütörtök').show()
