@@ -100,9 +100,10 @@ function createClass(sorszam, tantargy, terem, nap) {
     parentDiv.appendChild(childDiv2);
     parentDiv.appendChild(childDiv);
 
-
-
-    m3.append(parentDiv)
+    if (parentDiv.id == "Hétfő") {
+        $("Hétfős").append(parentDiv)
+    }
+    
 
 }
 
@@ -130,7 +131,8 @@ $(document).ready(function () {
                     var sorszam = data[i].sorszam
                     var nap = data[i].nap
                     createClass(sorszam, tantargy, terem, nap)
-                    
+
+    
                 }
             }
         }
