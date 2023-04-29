@@ -9,7 +9,7 @@ $(document).ready(function () {
             if (response == "success") {
                 alert(":D")
             } else {
-                alert(":C")
+                alert(response)
             }
         }
     })
