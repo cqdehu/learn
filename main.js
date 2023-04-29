@@ -124,7 +124,7 @@ $(document).ready(function () {
 let days = ["Hétfő","Kedd","Szerda","Csütörtök","Péntek"] 
 
 for (let i = 0; i < days.length; i++) {
-    console.log(weekdays[i])
+    console.log(days[i])
 }
 
 function createOneDay(day) {
