@@ -101,14 +101,6 @@ function createClass(sorszam, tantargy, terem, nap) {
 }
 
 
-function createOneDay(day,sorszam, tantargy, terem) {
-    createDay(day)
-    createClass(sorszam, tantargy, terem)
-}
-
-
-
-
 $(document).ready(function () {
     $.ajax({
         type: "POST",
@@ -128,6 +120,16 @@ $(document).ready(function () {
         }
     })
 })
+
+let days = ["Hétfő","Kedd","Szerda","Csütörtök","Péntek"] 
+
+for (let i = 0; i < days.length; i++) {
+    console.log(weekdays[i])
+}
+
+function createOneDay(day) {
+    createDay("")
+}
 
 
 
