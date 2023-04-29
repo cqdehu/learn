@@ -18,8 +18,10 @@ $(document).ready(function () {
 
 var hetfo = $('#hetfo')
 
-var m3 = document.createElement('div')
-m3.className = "m-3 "
+var m3 = $('#m3')
+
+//var m3 = document.createElement('div')
+//m3.className = "m-3 "
 
 var Row1 = document.createElement('div')
 Row1.className = "row justify-content-center "
@@ -34,11 +36,11 @@ dayP1.innerHTML = "Hétfő"
 
 
 hetfo.append(m3)
-m3.appendChild(Row1)
+m3.append(Row1)
 Row1.appendChild(dayCol1)
 dayCol1.appendChild(dayP1)
 
-m3.appendChild(Row1)
+m3.append(Row1)
 
 
 
