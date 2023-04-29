@@ -11,7 +11,7 @@ var m3 = $('#m3')
 function createDay(day) {
     var hetfoRow = document.createElement('div')
     hetfoRow.className = "row justify-content-center "
-    hetfoRow.id = day+"s"
+    hetfoRow.id = day + "s"
 
     var hetfoCol = document.createElement('div')
     hetfoCol.className = "col bg-light m-2 p-0 rounded "
@@ -25,15 +25,7 @@ function createDay(day) {
     hetfoCol.appendChild(hetfoP)
 }
 
-let days = ["Hétfő","Kedd","Szerda","Csütörtök","Péntek"] 
 
-for (let i = 0; i < days.length; i++) {
-    createOneDay(days[i])
-}
-
-function createOneDay(day) {
-    createDay(day)
-}
 
 
 
@@ -108,17 +100,7 @@ function createClass(sorszam, tantargy, terem, nap) {
     parentDiv.appendChild(childDiv2);
     parentDiv.appendChild(childDiv);
 
-    const divs = document.querySelectorAll("Hétfő")
 
-    divs.forEach(div => {
-        // Ha a div-nek 2-es ID-ja van
-        if (div.id === 'Hétfő') {
-          // Kiválasztjuk a 2-es ID-jű div-et
-          const targetDiv = document.getElementById('Hétfős');
-          // Áthelyezzük a div-et a targetDiv-be
-          targetDiv.appendChild(div);
-        }
-      });
 
     m3.append(parentDiv)
 
@@ -137,8 +119,17 @@ $(document).ready(function () {
                     var terem = data[i].terem
                     var sorszam = data[i].sorszam
                     var nap = data[i].nap
-                    createClass(sorszam, tantargy, terem, nap)
                     
+                    let days = ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek"]
+
+                    for (let i = 0; i < days.length; i++) {
+                        createOneDay(days[i])
+                    }
+                
+                    function createOneDay(day) {
+                        createDay(day)
+                        createClass(sorszam, tantargy, terem, nap)
+                    }
                 }
             }
         }
