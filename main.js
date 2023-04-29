@@ -118,7 +118,7 @@ function createOneDay(day,sorszam, tantargy, terem) {
     createClass(sorszam, tantargy, terem)
 }
 
-createOneDay("Kedd",1,"Angol nyelv",107)
+createOneDay("Kedd",1,"Angol nyelv","107")
 
 
 
