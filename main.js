@@ -41,8 +41,7 @@ let days = ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek"]
 function createClass(sorszam, tantargy, terem, nap) {
     // Create parent div element
     const parentDiv = document.createElement("div");
-    parentDiv.classList.add("row", "justify-content-center");
-    parentDiv.setAttribute("id", nap)
+    parentDiv.classList.add("row", "justify-content-center", nap);
 
     // Create child div element
     const childDiv = document.createElement("div");
