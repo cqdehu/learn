@@ -116,11 +116,11 @@ function createClass(sorszam, tantargy, terem, nap) {
         $(parentDiv).insertAfter("#Kedds");
     }
 
-    if (parentDiv.getAttribute('id') === "Szerda") {
+    if (parentDiv.hasClass('Szerda')) {
         $(parentDiv).insertAfter("#Szerdas");
     }
 
-    if (parentDiv.getAttribute('id') === "Csütörtök") {
+    if (parentDiv.hasClass('Csütörtök')) {
         $(parentDiv).insertAfter("#Csütörtöks");
     }
 
