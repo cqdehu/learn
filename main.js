@@ -24,13 +24,13 @@ function createDay(day) {
     hetfoCol.appendChild(hetfoP)
 
     if (hetfoRow.id.includes('Hétfős')) {
-        $('#Hétfő').appendChild(hetfoRow)
+        $('#Hétfő').append(hetfoRow)
         hetfoRow.appendChild(hetfoCol)
         hetfoCol.appendChild(hetfoP)
     }
 
     if (hetfoRow.id.includes('Kedds')) {
-        $('#Kedd').appendChild(hetfoRow)
+        $('#Kedd').append(hetfoRow)
         hetfoRow.appendChild(hetfoCol)
         hetfoCol.appendChild(hetfoP)
     }
