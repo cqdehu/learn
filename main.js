@@ -22,6 +22,20 @@ function createDay(day) {
     m3.append(hetfoRow)
     hetfoRow.appendChild(hetfoCol)
     hetfoCol.appendChild(hetfoP)
+
+    if (hetfoRow.id.includes('Hétfős')) {
+        $('#Hétfő').appendChild(hetfoRow)
+        hetfoRow.appendChild(hetfoCol)
+        hetfoCol.appendChild(hetfoP)
+    }
+
+    if (hetfoRow.id.includes('Kedds')) {
+        $('#Kedd').appendChild(hetfoRow)
+        hetfoRow.appendChild(hetfoCol)
+        hetfoCol.appendChild(hetfoP)
+    }
+
+
 }
 
 let days = ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek"]
@@ -32,7 +46,6 @@ for (let i = 0; i < days.length; i++) {
 
 function createOneDay(day) {
     createDay(day)
-
 }
 
 
