@@ -41,25 +41,29 @@ function createDay(day) {
 
 createDay("Hétfő")
 
-function createClass(){
+function createClass(order) {
+    var hetfoClass1 = document.createElement('div')
+    hetfoClass1.className = "row justify-content-center "
 
+    var hetfoClass1Order = document.createElement('div')
+    hetfoClass1Order.className = "col-1 bg-light m-2 p-0 rounded col-vertical-middle "
+
+    var hetfoClass1OrderP = document.createElement('p')
+    hetfoClass1OrderP.className = "text-center TW m-0 py-3 px-2 "
+    hetfoClass1OrderP.innerHTML = order
+
+    m3.append(hetfoClass1)
+    hetfoClass1.appendChild(hetfoClass1Order)
+    hetfoClass1Order.appendChild(hetfoClass1OrderP)
 }
 
+createClass(1)
+
+createClass(2)
 
 
-var hetfoClass1 = document.createElement('div')
-hetfoClass1.className = "row justify-content-center "
 
-var hetfoClass1Order = document.createElement('div')
-hetfoClass1Order.className = "col-1 bg-light m-2 p-0 rounded col-vertical-middle "
 
-var hetfoClass1OrderP = document.createElement('p')
-hetfoClass1OrderP.className = "text-center TW m-0 py-3 px-2 "
-hetfoClass1OrderP.innerHTML = "1"
-
-m3.append(hetfoClass1)
-hetfoClass1.appendChild(hetfoClass1Order)
-hetfoClass1Order.appendChild(hetfoClass1OrderP)
 
 
 
