@@ -21,8 +21,8 @@ var hetfo = $('#hetfo')
 var m3 = document.createElement('div')
 m3.className = "m-3 "
 
-var dayRow1 = document.createElement('div')
-dayRow1.className = "row justify-content-center "
+var Row1 = document.createElement('div')
+Row1.className = "row justify-content-center "
 
 var dayCol1 = document.createElement('div')
 dayCol1.className = "col bg-light m-2 p-0 rounded "
@@ -34,9 +34,12 @@ dayP1.innerHTML = "Hétfő"
 
 
 hetfo.append(m3)
-m3.appendChild(dayRow1)
-dayRow1.appendChild(dayCol1)
+m3.appendChild(Row1)
+Row1.appendChild(dayCol1)
 dayCol1.appendChild(dayP1)
+
+m3.appendChild(Row1)
+
 
 
 
