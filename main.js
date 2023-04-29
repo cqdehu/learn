@@ -35,6 +35,24 @@ function createDay(day) {
         hetfoCol.appendChild(hetfoP)
     }
 
+    if (hetfoRow.id.includes('Szerdas')) {
+        $('#Szerda').append(hetfoRow)
+        hetfoRow.appendChild(hetfoCol)
+        hetfoCol.appendChild(hetfoP)
+    }
+
+    if (hetfoRow.id.includes('Csütörtöks')) {
+        $('#Csütörtök').append(hetfoRow)
+        hetfoRow.appendChild(hetfoCol)
+        hetfoCol.appendChild(hetfoP)
+    }
+
+    if (hetfoRow.id.includes('Pénteks')) {
+        $('#Péntek').append(hetfoRow)
+        hetfoRow.appendChild(hetfoCol)
+        hetfoCol.appendChild(hetfoP)
+    }
+
 
 }
 
