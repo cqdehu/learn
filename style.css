@@ -1,8 +1,11 @@
 body {
     background: #1c1c1c;
     text-align: justify;
-    overflow: hidden;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 ion-icon {
     font-size: 1.3rem;
@@ -15,3 +18,4 @@ ion-icon {
     margin: 0;
     padding: 0;
 }
+
