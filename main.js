@@ -111,7 +111,7 @@ function createClass(sorszam, tantargy, terem) {
     m3.append(parentDiv)
 }
 
-createClass(1,"Tesi",2)
+createClass("1","Tesi","4")
 
 //function createOneDay(day,sorszam, tantargy, terem) {
 //    createDay(day)
