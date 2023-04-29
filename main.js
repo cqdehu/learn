@@ -156,7 +156,10 @@ $(document).ready(function () {
 })
 
 $('#Hétfős').on('click',function(){
-    $('#offcanvasClass').offcanvas('show')
+    $('#Kedd').hide()
+    $('#Szerda').hide()
+    $('#Csütörtök').hide()
+    $('#Péntek').hide()
 })
 
 
