@@ -30,7 +30,7 @@ function createClass(sorszam, tantargy, terem, nap) {
     // Create parent div element
     const parentDiv = document.createElement("div");
     parentDiv.classList.add("row", "justify-content-center");
-    childDiv.setAttribute("id", nap);
+    childDiv.id = nap
 
     // Create child div element
     const childDiv = document.createElement("div");
