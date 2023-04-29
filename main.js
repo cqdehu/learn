@@ -163,64 +163,20 @@ var clicked = {
   };
   
   $('#Hétfős').on('dblclick', function() {
-    $('.Kedd, .Szerda, .Csütörtök, .Péntek, #Kedds, #Szerdas, #Csütörtöks, #Pénteks').fadeOut(500, function() {
-      $('#Hétfős').delay(500).fadeIn(500);
-    });
-    clicked['Hétfős'] = !clicked['Hétfős'];
-    if (clicked['Hétfős']) {
+    $('.Kedd, .Szerda, .Csütörtök, .Péntek, #Kedds, #Szerdas, #Csütörtöks, #Pénteks').fadeOut(500);
       $('.Kedd, .Szerda, .Csütörtök, .Péntek, #Kedds, #Szerdas, #Csütörtöks, #Pénteks').hide();
-    } else {
-      $('.Kedd, .Szerda, .Csütörtök, .Péntek, #Kedds, #Szerdas, #Csütörtöks, #Pénteks').show();
-    }
-  });
-  
-  $('#Kedds').on('dblclick', function() {
-    $('.Hétfős, .Szerda, .Csütörtök, .Péntek, #Hétfős, #Szerdas, #Csütörtöks, #Pénteks').fadeOut(500, function() {
-      $('#Kedds').delay(500).fadeIn(500);
-    });
-    clicked['Kedds'] = !clicked['Kedds'];
-    if (clicked['Kedds']) {
-      $('.Hétfő, .Szerda, .Csütörtök, .Péntek, #Hétfős, #Szerdas, #Csütörtöks, #Pénteks').hide();
-    } else {
-      $('.Hétfő, .Szerda, .Csütörtök, .Péntek, #Hétfős, #Szerdas, #Csütörtöks, #Pénteks').show();
-    }
-  });
-  
-  $('#Szerdas').on('dblclick', function() {
-    $('.Hétfős, .Kedd, .Csütörtök, .Péntek, #Hétfős, #Kedds, #Csütörtöks, #Pénteks').fadeOut(500, function() {
-      $('#Szerdas').delay(500).fadeIn(500);
-    });
-    clicked['Szerdas'] = !clicked['Szerdas'];
-    if (clicked['Szerdas']) {
-      $('.Hétfő, .Kedd, .Csütörtök, .Péntek, #Hétfős, #Kedds, #Csütörtöks, #Pénteks').hide();
-    } else {
-      $('.Hétfő, .Kedd, .Csütörtök, .Péntek, #Hétfős, #Kedds, #Csütörtöks, #Pénteks').show();
-    }
   });
 
-  $('#Csütörtöks').on('dblclick', function() {
-    $('.Hétfős, .Kedd, .Szerda, .Péntek, #Hétfős, #Kedds, #Szerdas, #Pénteks').fadeOut(500, function() {
-    $('#Csütörtöks').delay(500).fadeIn(500);
-    });
-    clicked['Csütörtöks'] = !clicked['Csütörtöks'];
-    if (clicked['Csütörtöks']) {
-    $('.Hétfő, .Kedd, .Szerda, .Péntek, #Hétfős, #Kedds, #Szerdas, #Pénteks').hide();
-    } else {
-    $('.Hétfő, .Kedd, .Szerda, .Péntek, #Hétfős, #Kedds, #Szerdas, #Pénteks').show();
-    }
-    });
-    
-    $('#Pénteks').on('dblclick', function() {
-    $('.Hétfős, .Kedd, .Szerda, .Csütörtöks, #Hétfős, #Kedds, #Szerdas, #Csütörtöks').fadeOut(500, function() {
-    $('#Pénteks').delay(500).fadeIn(500);
-    });
-    clicked['Pénteks'] = !clicked['Pénteks'];
-    if (clicked['Pénteks']) {
-    $('.Hétfő, .Kedd, .Szerda, .Csütörtöks, #Hétfős, #Kedds, #Szerdas, #Csütörtöks').hide();
-    } else {
-    $('.Hétfő, .Kedd, .Szerda, .Csütörtöks, #Hétfős, #Kedds, #Szerdas, #Csütörtöks').show();
-    }
-    });
+  $('#Hétfős').on('click', function() {
+    $('.Kedd, .Szerda, .Csütörtök, .Péntek, #Kedds, #Szerdas, #Csütörtöks, #Pénteks').fadeIn(500);
+  });
+
+
+  
+  $('#Kedds').on('dblclick', function() {
+    $('.Hétfő, .Szerda, .Csütörtök, .Péntek, #Hétfős, #Szerdas, #Csütörtöks, #Pénteks').fadeOut(500);
+      $('.Kedd, .Szerda, .Csütörtök, .Péntek, #Kedds, #Szerdas, #Csütörtöks, #Pénteks').hide();
+  });
 
 
 
