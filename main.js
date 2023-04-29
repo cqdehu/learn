@@ -44,6 +44,10 @@ hetfoClass1.className = "row justify-content-center "
 var hetfoClass1Order = document.createElement('div')
 hetfoClass1Order.className = "col-1 bg-light m-2 p-0 rounded col-vertical-middle "
 
+m3.append(hetfoClass1)
+hetfoClass1.appendChild(hetfoClass1Order)
+
+
 
 
 
