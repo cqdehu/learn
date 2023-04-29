@@ -1,7 +1,6 @@
-
-
-
-var hetfo = $('#hetfo')
+$(document).ready(function(){
+    document.body.fadeIn(500)
+})
 
 var m3 = $('#m3')
 
