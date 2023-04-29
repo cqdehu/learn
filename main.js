@@ -2,7 +2,6 @@ $(document).ready(function(){
     $('body').fadeIn(500);
   });
 
-var m3 = $('#m3')
 
 //var m3 = document.createElement('div')
 //m3.className = "m-3 "
@@ -18,10 +17,6 @@ function createDay(day) {
     var hetfoP = document.createElement('p')
     hetfoP.className = "text-center TW m-0 py-3 px-2 "
     hetfoP.innerHTML = day
-
-    m3.append(hetfoRow)
-    hetfoRow.appendChild(hetfoCol)
-    hetfoCol.appendChild(hetfoP)
 
     if (hetfoRow.id.includes('Hétfős')) {
         $('#Hétfő').append(hetfoRow)
