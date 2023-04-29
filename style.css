@@ -1,6 +1,7 @@
 body {
     background: #1c1c1c;
     text-align: justify;
+    overflow: hidden;
 }
 
 ion-icon {
