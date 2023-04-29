@@ -9,7 +9,7 @@ if (!$conn) {
 }
 
 // SQL lekérdezés futtatása
-$sql = "SELECT * FROM `lessons` ORDER BY `lessons`.`sorszam` ASC";
+$sql = "SELECT * FROM `lessons` ORDER BY `lessons`.`sorszam` DESC";
 $result = mysqli_query($conn, $sql);
 
 // Ellenőrzés, hogy sikeres volt-e a lekérdezés
