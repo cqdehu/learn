@@ -155,7 +155,6 @@ $(document).ready(function () {
 })
 
 $('#Hétfős').on('dblclick', function() {
-    window.location.href = "#Hétfős"
     $('.Kedd').fadeOut()
     $('.Szerda').fadeOut()
     $('.Csütörtök').fadeOut()
