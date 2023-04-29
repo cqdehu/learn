@@ -108,23 +108,23 @@ function createClass(sorszam, tantargy, terem, nap) {
     parentDiv.appendChild(childDiv2);
     parentDiv.appendChild(childDiv);
 
-    if (parentDiv.getAttribute('id') === "Hétfő") {
+    if (parentDiv.className.includes('Hétfő')) {
         $(parentDiv).insertAfter("#Hétfős");
     }
     
-    if (parentDiv.getAttribute('id') === "Kedd") {
+    if (parentDiv.className.includes('Kedd')) {
         $(parentDiv).insertAfter("#Kedds");
     }
 
-    if (parentDiv.hasClass('Szerda')) {
+    if (parentDiv.className.includes('Szerda')) {
         $(parentDiv).insertAfter("#Szerdas");
     }
 
-    if (parentDiv.hasClass('Csütörtök')) {
+    if (parentDiv.className.includes('Csütörtök')) {
         $(parentDiv).insertAfter("#Csütörtöks");
     }
 
-    if (parentDiv.getAttribute('id') === "Péntek") {
+    if (parentDiv.className.includes('Péntek')) {
         $(parentDiv).insertAfter("#Pénteks");
     }
 
