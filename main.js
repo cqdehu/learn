@@ -33,7 +33,7 @@ dayP1.innerHTML = "Hétfő"
 
 
 
-hetfo.appendChild(m3)
+hetfo.append(m3)
 m3.appendChild(dayRow1)
 dayRow1.appendChild(dayCol1)
 dayCol1.appendChild(dayP1)
