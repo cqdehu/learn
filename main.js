@@ -111,9 +111,7 @@ function createClass(sorszam, tantargy, terem, nap) {
 
     if (parentDiv.id = "Hétfő") {
         $(parentDiv).insertAfter("#Hétfős");
-    }
-
-    if (parentDiv.id = "Kedd") {
+    } else {
         $(parentDiv).insertAfter("#Kedds");
     }
 
