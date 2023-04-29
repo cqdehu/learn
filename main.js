@@ -120,7 +120,8 @@ $(document).ready(function () {
                     var terem = data[i].terem
                     var sorszam = data[i].sorszam
                     var nap = data[i].nap
-                    createOneDay(nap,sorszam,tantargy,terem)
+                    createClass(sorszam, tantargy, terem)
+                    
                 }
             }
         }
