@@ -3,7 +3,7 @@ $(document).ready(function () {
         type: "POST",
         url: "getclass.php",
         data: {
-            name: "Ábel"
+            name: "Abel"
         },
         success: function (response) {
             if (response == "success") {
