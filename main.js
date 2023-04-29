@@ -25,7 +25,16 @@ function createDay(day) {
     hetfoCol.appendChild(hetfoP)
 }
 
+let days = ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek"]
 
+                    for (let i = 0; i < days.length; i++) {
+                        createOneDay(days[i])
+                    }
+                
+                    function createOneDay(day) {
+                        createDay(day)
+                        
+                    }
 
 
 
@@ -115,16 +124,7 @@ $(document).ready(function () {
         dataType: "json",
         success: function (data) {
             if (data.length > 0) {
-                let days = ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek"]
-
-                    for (let i = 0; i < days.length; i++) {
-                        createOneDay(days[i])
-                    }
                 
-                    function createOneDay(day) {
-                        createDay(day)
-                        
-                    }
                 for (var i = 0; i < data.length; i++) {
                     var tantargy = data[i].tantargy
                     var terem = data[i].terem
