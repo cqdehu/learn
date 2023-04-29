@@ -155,10 +155,10 @@ $(document).ready(function () {
 })
 
 $('#Hétfős').on('click',function(){
-    $('#Kedd').hide()
-    $('#Szerda').hide()
-    $('#Csütörtök').hide()
-    $('#Péntek').hide()
+    $('.Kedd').hide()
+    $('.Szerda').hide()
+    $('.Csütörtök').hide()
+    $('.Péntek').hide()
 })
 
 
