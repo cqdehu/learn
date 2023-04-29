@@ -124,11 +124,11 @@ $(document).ready(function () {
 let days = ["Hétfő","Kedd","Szerda","Csütörtök","Péntek"] 
 
 for (let i = 0; i < days.length; i++) {
-    console.log(days[i])
+    createOneDay(days[i])
 }
 
 function createOneDay(day) {
-    createDay("")
+    createDay(day)
 }
 
 
