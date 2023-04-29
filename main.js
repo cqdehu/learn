@@ -165,7 +165,7 @@ $('#Hétfős').on('click',function(){
     $('#Pénteks').hide()
 })
 
-$('#Hétfő').on('dbclick',function(){
+$('#Hétfő').on('dblclick',function(){
     $('.Kedd').show()
     $('.Szerda').show()
     $('.Csütörtök').show()
