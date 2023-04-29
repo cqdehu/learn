@@ -113,13 +113,12 @@ function createClass(sorszam, tantargy, terem) {
 
 
 
-function createOneDay(day) {
+function createOneDay(day,sorszam, tantargy, terem) {
     createDay(day)
-    createClass("1","Történelem","133")
+    createClass(sorszam, tantargy, terem)
 }
 
-createOneDay("Kedd")
-
+createOneDay("Kedd",1,"Angol nyelv",107)
 
 
 
