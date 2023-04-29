@@ -120,6 +120,8 @@ function createClass(sorszam, tantargy, terem, nap) {
         }
       });
 
+    m3.append(parentDiv)
+
 }
 
 
