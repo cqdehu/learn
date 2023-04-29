@@ -176,7 +176,7 @@ $('#Kedds').on('dblclick', function () {
     $('.Hétfő, .Szerda, .Csütörtök, .Péntek, #Hétfős, #Szerdas, #Csütörtöks, #Pénteks').fadeOut(500);
 });
 
-$('##Kedds').on('click', function () {
+$('#Kedds').on('click', function () {
     $('.Hétfő, .Szerda, .Csütörtök, .Péntek, #Hétfős, #Szerdas, #Csütörtöks, #Pénteks').fadeIn(500);
 });
 
