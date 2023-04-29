@@ -39,7 +39,7 @@ function createDay(day) {
     hetfoCol.appendChild(hetfoP)
 }
 
-createDay("Hétfő")
+
 
 function createClass(sorszam, tantargy, terem) {
     // Create parent div element
@@ -113,13 +113,12 @@ function createClass(sorszam, tantargy, terem) {
 
 
 
-createClass(1,"Történelem",133)
+function createOneDay(day) {
+    createDay(day)
+    createClass(1,"Történelem",133)
+}
 
-createClass(2,"Fizika",308)
-
-
-
-
+createOneDay("Kedd")
 
 
 
