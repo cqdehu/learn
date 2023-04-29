@@ -164,7 +164,6 @@ var clicked = {
   
   $('#Hétfős').on('dblclick', function() {
     $('.Kedd, .Szerda, .Csütörtök, .Péntek, #Kedds, #Szerdas, #Csütörtöks, #Pénteks').fadeOut(500);
-      $('.Kedd, .Szerda, .Csütörtök, .Péntek, #Kedds, #Szerdas, #Csütörtöks, #Pénteks').hide();
   });
 
   $('#Hétfős').on('click', function() {
