@@ -165,15 +165,15 @@ $('#Hétfős').on('dblclick',function(){
     $('#Pénteks').hide()
 })
 
-$('#Hétfő').on('click',function(){
-    $('.Kedd').show()
-    $('.Szerda').show()
-    $('.Csütörtök').show()
-    $('.Péntek').show()
-    $('#Kedds').show()
-    $('#Szerdas').show()
-    $('#Csütörtöks').show()
-    $('#Pénteks').show()
+$('#Hétfő').on('dblclick',function(){
+    $('.Kedd').css('display', 'block');
+    $('.Szerda').css('display', 'block');
+    $('.Csütörtök').css('display', 'block');
+    $('.Péntek').css('display', 'block');
+    $('#Kedds').css('display', 'block');
+    $('#Szerdas').css('display', 'block');
+    $('#Csütörtöks').css('display', 'block');
+    $('#Pénteks').css('display', 'block');
 })
 
 
