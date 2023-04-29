@@ -11,7 +11,7 @@ var m3 = $('#m3')
 function createDay(day) {
     var hetfoRow = document.createElement('div')
     hetfoRow.className = "row justify-content-center "
-    hetfoRow.id = day
+    hetfoRow.id = day+"s"
 
     var hetfoCol = document.createElement('div')
     hetfoCol.className = "col bg-light m-2 p-0 rounded "
@@ -108,12 +108,17 @@ function createClass(sorszam, tantargy, terem, nap) {
     parentDiv.appendChild(childDiv2);
     parentDiv.appendChild(childDiv);
 
-    if (parentDiv.id == "Hétfő") {
-        $('Hétfő').append(parentDiv)
-    } else {
-        m3.append(parentDiv)
-    }
+    const divs = document.querySelectorAll("Hétfő")
 
+    divs.forEach(div => {
+        // Ha a div-nek 2-es ID-ja van
+        if (div.id === 'Hétfő') {
+          // Kiválasztjuk a 2-es ID-jű div-et
+          const targetDiv = document.getElementById('Hétfős');
+          // Áthelyezzük a div-et a targetDiv-be
+          targetDiv.appendChild(div);
+        }
+      });
 
 }
 
