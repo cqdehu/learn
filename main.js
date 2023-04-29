@@ -1,19 +1,4 @@
-$(document).ready(function () {
-    $.ajax({
-        type: "POST",
-        url: "getclass.php",
-        data: {
-            name: "Abel"
-        },
-        success: function (response) {
-            if (response == "success") {
-                console.log(":D")
-            } else {
-                console.log(response)
-            }
-        }
-    })
-})
+
 
 
 var hetfo = $('#hetfo')
@@ -120,10 +105,29 @@ function createOneDay(day,sorszam, tantargy, terem) {
     createClass(sorszam, tantargy, terem)
 }
 
-createOneDay("Kedd",1,"Angol nyelv","107")
 
 
 
+$(document).ready(function () {
+    $.ajax({
+        type: "POST",
+        url: "getclass.php",
+        data: {
+            name: "Abel"
+        },
+        success: function (data) {
+            if (data.length > 0) {
+                for (var i = 0; i < data.length; i++) {
+                    var tantargy = data[i].tantargy
+                    var terem = data[i].terem
+                    var sorszam = data[i].sorszam
+                    var nap = data[i].nap
+                    createOneDay(nap,sorszam,tantargy,terem)
+                }
+            }
+        }
+    })
+})
 
 
 
