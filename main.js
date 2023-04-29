@@ -101,7 +101,7 @@ function createClass(sorszam, tantargy, terem, nap) {
     // Create paragraph element for second column
     const secondColumnParagraph = document.createElement("p");
     secondColumnParagraph.classList.add("text-end", "TW", "m-0", "py-3", "px-2");
-    secondColumnParagraph.textContent = terem;
+    secondColumnParagraph.textContent = terem+" ";
 
     // Create image element for level icon
     const levelIcon = document.createElement("img");
