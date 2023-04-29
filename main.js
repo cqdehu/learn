@@ -115,7 +115,7 @@ function createClass(sorszam, tantargy, terem) {
 
 function createOneDay(day) {
     createDay(day)
-    createClass(1,"Történelem",133)
+    createClass("1","Történelem","133")
 }
 
 createOneDay("Kedd")
