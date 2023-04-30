@@ -91,7 +91,7 @@ function createClass(sorszam, tantargy, terem, nap) {
 
     // Create second column of inner row div element
     const secondColumnDiv = document.createElement("div");
-    secondColumnDiv.classList.add("col-2", "col-vertical-middle");
+    secondColumnDiv.classList.add("col-4", "col-vertical-middle");
 
     // Create paragraph element for second column
     const secondColumnParagraph = document.createElement("p");
